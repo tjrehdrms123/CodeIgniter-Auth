@@ -1,6 +1,12 @@
 ## Codeigniter-Auth
 
-### File to Use
+### 01. Execution environment
+ - Xampp Control Panel v3.3.0
+ - PHP 8.1.2
+ - MySQL
+ - Composer version 2.0.13
+
+### 02. File to Use
  - Config / Remember
    - .env : Database info
    - App.php , .htaccess : do not display index.php
