@@ -1,12 +1,24 @@
 ## Codeigniter-Auth
 
-### Work History
- - 01. DB Create
-    - user table create
- - 02. .env file create
-    - CI_ENVIRONMENT change
- - 03. view page
-    - Login , Register
- - 04. index.php remove
-    - .htacess create
-    - App.php $indexPage update
+### File to Use
+ - Config / Remember
+   - .env : Database info
+   - App.php , .htaccess : do not display index.php
+     - public $indexPage = '';
+   - Filters.php : add custom filters
+     - AuthCheck , AlreadyLoggedIn
+   - Filters , Libraries
+ - Model
+   - usersModel.php : users 테이블
+ - View
+   - auth
+     - login.php : 로그인하는 페이지
+     - register.php : 회원가입하는 페이지
+   - dashboard
+     - index.php : 대시보드 페이지
+     - profile.php : 개인 프로필 페이지
+ - Controller
+   - Auth.php : 로그인 , 회원가입에 해당하는 컨트롤러
+   - Dashboard.php : 대시보드 , 개인 프로필에 해당하는 컨트롤러
+ - Routing
+   - Routes.php : 라우팅 설정과 필터링 설정
